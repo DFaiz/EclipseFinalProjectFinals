@@ -1,0 +1,1213 @@
+/****************************/
+/*general CSS for all pages */
+/****************************/
+
+/*new font*/
+
+@import url(http://fonts.googleapis.com/css?family=Orbitron);
+* {
+	margin: 0;
+	padding: 0;
+}
+
+article, section, main, nav, aside, footer, header {
+	display: block;
+}
+/*img background space*/
+.img {
+	background-image: url("../images/backgroundSpace.png");
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* type of font*/
+a {
+	text-decoration: none;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 17px;
+	margin-left: 15px;
+}
+
+.clear/*div class="clear" for elements with float right and left problem*/ {
+	clear: both;
+}
+
+/*************************************aside fixed- icon ****************************/
+.fixed_aside {
+	position: fixed;
+	height: 180px;
+	width: 60px;
+	border-right: none;
+	right: 0;
+	margin-top: 220px;
+	z-index: 4;
+}
+
+.fixed_aside section {
+	height: 40px;
+	width: 40px;
+	margin-top: 7px;
+	margin-left: 8px;
+	border-radius: 2em;
+}
+/*facebook Icon*/
+#icon1 {
+	background: url("../images/facebookIcon.png");
+	cursor: pointer;
+}
+/*google plus Icon*/
+#icon2 {
+	background: url("../images/googleplusIcon.png");
+	cursor: pointer;
+}
+/*twitter Icon*/
+#icon3 {
+	background: url("../images/twitterIcon.png");
+	cursor: pointer;
+}
+/*youtube Icon*/
+#icon4 {
+	background: url("../images/youtubeIcon.png");
+	cursor: pointer;
+}
+
+/**************************************End aside fixed- icon********************************************/
+
+/****************************************************** header *******************************************************/
+.header {
+	position: fixed;
+	width: 100%;
+	height: 52px;
+	border-bottom: 1px solid white;
+	background-color: rgba(204,204,204,0.5);
+	z-index: 3;
+}
+
+/*************search*****************/
+.input_search {
+	height: 30px;
+	width: 170px;
+	float: left;
+	border-radius: 15px;
+	margin-left: 192px;
+	padding-left: 25px;
+	margin-top: 10px;
+	border: 2px solid gray;
+}
+
+.icon {
+	height: 18px;
+	width: 18px;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 198px;
+	background: url("../images/search.png");
+}
+
+input[type="search"]:focus {
+	outline: 0 none;
+}
+/*************End search*****************/
+
+/*************menu*****************/
+.menu {
+	width: 42%;
+	height: 52px;
+	display: inline-block;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.menu a {
+	color: #FFFFFF;
+	display: block;
+	margin-top: 16px;
+	margin-right: 14px;
+}
+
+.menu a:hover {
+	color: #003399;
+}
+.menu section {
+	float: left;
+	cursor: pointer;
+}
+
+/*************End menu*****************/
+
+/*************menu login*****************/
+
+.menu_login {
+	width: 22%;
+	height: 52px;
+	margin-right: 10px;
+	display: inline-block;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.menu_login a {
+	display: block;
+	float: right;
+	margin-top: 16px;
+	margin-right: 14px;
+	color: #00CC33;
+}
+.menu_login a:hover {
+	color: #66FF00;
+}
+
+/*************End menu login*****************/
+
+/************* menu Sections*****************/
+
+.menuSection1 a {
+	margin-left: 25px;
+}
+
+.menuSection2 a {
+	margin-left: 30px;
+}
+
+.menuSection3 a {
+	margin-left: 15px;
+}
+
+.menuSection4 a {
+	margin-left: 25px;
+}
+
+/*************End menu Sections*****************/
+
+/************* menu Sections of login*****************/
+
+.menuSection5 a {
+	margin-left: 25px;
+}
+
+.menuSection6 a {
+	margin-left: 20px;
+}
+
+/************* End menu Sections of login*****************/
+
+/****************************************************** End header *******************************************************/
+
+/****************************************************** wrapper *******************************************************/
+
+/******* the wrapper is caring everything ******/
+
+#wrapper {
+	width: 80.5%; /* according to design's width- (1100/3600)*100=80.5%  */
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+
+.headlineHeader {
+	width: 100%;
+	height: 205px;
+}
+
+/* WOW - Animation to title EcliPse */
+.wow {
+	visibility: hidden;
+}
+
+#middle_headline {
+	font-family: 'Orbitron', sans-serif;
+	color: #FFFFFF;
+	font-size: 170px;
+	line-height: 200px;
+	padding-top: 5%;
+}
+
+.bottom_headline {
+	font-family: 'Orbitron', sans-serif;
+	color: #FFFFFF;
+	font-size: 50px;
+	text-align: right;
+	line-height: 20px;
+	margin-bottom: 30px;
+	padding-top: 18px;
+}
+
+/*********************************** main ****************************************/
+
+main {
+	width: 100%;
+	border-bottom: 1px solid white;
+	position: relative;
+}
+
+.mini_wrapper {
+	height: 1410px;
+	width: 100%;
+	background-color: #808080;
+	opacity: 0.75;
+	margin-top: 9%;
+}
+
+.allImg_index {
+
+	border-top: 1px solid #FFFFFF;
+	width: 100%;
+	height: 350px;
+	z-index: 1;
+}
+
+/*********************************** IMAGES   *********************************/
+
+.allImg_headline {
+	/* display:none;*/
+	position: absolute;
+	width: 250px;
+	height: 40px;
+	color: #FFFFFF;
+	margin-top: 40px;
+	margin-left: 23px;
+}
+
+.allImg_headline a {
+	font-size: 30px;
+	text-decoration: none;
+	font-family: 'Orbitron', sans-serif;
+}
+/************** Common to all images ************/
+
+/* Explanation image that appears at the moment that are in the picture*/
+.hidden_a, .hidden_a2, .hidden_a3 {
+	display: none;
+	position: absolute;
+	top: 40px;
+	font-family: arial;
+	z-index: 0;
+}
+
+/*Black frame of the title of the picture*/
+.bottomDiv1 {
+	position: relative;
+	height: 40px;
+	width: 100%;
+	margin-top: 126px;
+	display: block;
+	color: rgb(255,255,255);
+	transform: translateZ(0);
+	z-index: 0;
+	-webkit-transition: all 0.3s ease-in; /* For Safari 3.1 to 6.0 */
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+	background-color: rgba(0,0,0,0.6);
+}
+/* Title of photo */
+.top_a {
+	position: absolute;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 19px;
+	top: 10px;
+	color: #D5C171;
+	z-index: 1;
+}
+
+/* hover of images*/
+
+.move1:hover  .bottomDiv1, .move2:hover  .bottomDiv1, .move3:hover  .bottomDiv1 {
+	opacity: 0.9;
+	filter: Alpha(opacity=90); /* IE8 and earlier */
+	height: 70px;
+	margin-top: 96px;
+}
+/************** Picture 1 - Asteroids ************/
+
+.move1 {
+	border: 1px solid #FFFFFF;
+	border-radius: 3px;
+	position: relative;
+	float: left;
+	margin-top: 90px;
+	margin-left: 35px;
+	height: 166px;
+	z-index: 0;
+	width: 300px;
+	background: url("../images/metor.png");
+	cursor: pointer;
+}
+
+.fixed13 {
+	margin-left: 35px;
+	-webkit-transition: all 1s ease-in;For Safari 3.1 to 6.0
+	-moz-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+}
+
+/************** Picture 2 - Battleships ************/
+.move2 {
+	border-radius: 3px;
+	border: 1px solid #FFFFFF;
+	position: relative;
+	float: left;
+	margin-top: 90px;
+	margin-left: 36px;
+	height: 166px;
+	width: 300px;
+	background: url("../images/imgSpaceShip2.png");
+	cursor: pointer;
+}
+
+.fixed9 {
+	margin-left: 20px;
+	-webkit-transition: all 1s ease-in; /* For Safari 3.1 to 6.0 */
+	-moz-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+}
+/************** Picture 3 - Oculus Rift ************/
+.move3 {
+	border-radius: 3px;
+	border: 1px solid #FFFFFF;
+	position: relative;
+	float: left;
+	margin-top: 90px;
+	margin-left: 36px;
+	height: 166px;
+	width: 300px;
+	background: url("../images/oculus.png");
+	cursor: pointer;
+}
+
+.fixed10 {
+	margin-left: 17px;
+	-webkit-transition: all 1s ease-in; /* For Safari 3.1 to 6.0 */
+	-moz-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+}
+
+/***** Open Image*****/
+.exit {
+	display: none;
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	background-image: url("../images/exit.png");
+	cursor: pointer;
+}
+
+.putImage {
+	display: none;
+	position: fixed;
+	width: 42.5%;
+	border: 2px solid #FFFFFF;
+	height: 290px;
+	top: 50%;
+	left: 50%;
+	margin-top: -9em; /*set to a negative number 1/2 of your height*/
+	margin-left: -17em;
+}
+
+.backScreen {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 4500px;
+	background-color: #808080;
+	opacity: 0.95;
+	z-index: 10;
+}
+
+/************************************ End IMAGES   ***********************************/
+
+/******************************* Information *****************************************/
+
+.information {
+	height: 360px;
+	background-color: #808080;
+	opacity: 0.9;
+	width: 100%;
+	box-shadow: 0px 0px 23px -4px #000000; /*Line that separates the video information*/
+}
+
+.picture {
+	width: 500px;
+	height: 360px;
+	display: inline-block;
+	position: absolute;
+	background: url("../images/WOW4.png");
+}
+
+.textArea {
+	width: 600px;
+	height: 360px;
+	display: block;
+	float: right;
+}
+
+.textHeadline {
+	width: 300px;
+	height: 40px;
+	color: #FFFFFF;
+	margin-top: 40px;
+	margin-right: 225px;
+	display: block;
+	float: right;
+}
+
+.textHeadline a {
+	font-size: 24px;
+	text-decoration: none;
+	font-family: 'Orbitron', sans-serif;
+}
+.textP {
+	width: 450px;
+	height: 200px;
+	margin-right: 60px;
+	color: white;
+	font-size: 21px;
+	font-family: 'Orbitron', sans-serif;
+	float: right;
+	display: block;
+}
+.readMore {
+	text-decoration: none;
+	float: right;
+	margin-right: 20px;
+	color: #FFFFFF;
+	margin-top: 40px;
+}
+
+/********************************* End Information ********************************/
+
+/************************************ VIDEOS **************************************/
+
+.allVid_headline {
+	position: absolute;
+	width: 250px;
+	height: 40px;
+	color: #FFFFFF;
+	margin-top: 40px;
+	margin-left: 72px;
+}
+
+.allVid_headline a {
+	font-size: 30px;
+	text-decoration: none;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.move4 {
+	position: absolute;
+	margin-top: 9%;
+	margin-left: 8%;
+	display: none;
+	z-index: 0;
+}
+
+/********************************* End VIDEOS **************************************/
+
+/*************** Profit separates video and spaceship parts ************************/
+.Profit1 {
+	height: 400px;
+	width: 100%;
+}
+
+/****************************** Parts of the spaceship ******************************/
+/* All div  Parts of the spaceship */
+.background4 { 
+	background-color: #808080;
+	opacity: 0.8;
+	width: 100%;
+	height: 905px;
+	position: relative;
+	z-index: 0;
+	margin-top: -52px;
+}
+/* The move word- Parts of the spaceship*/
+.ltr1 {
+	margin-left: 420px;
+	margin-top: 53px;
+	-webkit-transition: all 1s ease-in; /* For Safari 3.1 to 6.0 */
+	-moz-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+}
+/* The word- Parts of the spaceship*/
+.avatarHeadline1 {
+	left: -320px;
+	position: absolute;
+	z-index: 0;
+	font-size: 37px;
+	font-family: 'Orbitron', sans-serif;
+	color: #FFFFFF;
+}
+/* Image of the spaceship*/
+.avatarModel{
+	width: 420px;
+	height: 407px;
+	margin-left: 38%;
+	margin-top: 8%;
+	float: left;
+	z-index: 1;
+	background: url("../images/14.png");
+}
+
+/*The parts of the spaceship*/
+.category1 {
+	background: url("../images/chair2.png");
+}
+
+.category2 {
+	background: url("../images/FRONT2.png");
+}
+
+.category3 {
+	background: url("../images/Pilot_chair.png");
+}
+
+.category4 {
+	background: url("../images/fire.png");
+}
+
+.category5 {
+	background: url("../images/Gun-sight.png");
+}
+
+.category6 {
+	background: url("../images/M1.png");
+}
+
+.category7 {
+	background: url("../images/Goiistik1.png");
+}
+
+.category8 {
+	background: url("../images/Goiistik.png");
+}
+
+.category9 {
+	background: url("../images/oculus4.png");
+}
+
+.background4 > div > div {
+	float: left;
+	margin-top: 2%;
+	margin-left: 13%;
+	height: 107px;
+	width: 112px;
+	display: block;
+	border: 1px solid #FFFFFF;
+}
+/******************************End Parts of the spaceship ******************************/
+
+/*********** Profit separates parts of the probe and the Leader Board  ****************/
+.Profit2 {
+	height: 356px;
+	width: 100%;
+	position: relative;
+}
+
+/************************************* Leader Board  ***********************************/
+/* All div Leader Board */
+.ratings {
+	width: 100%;
+	height: 755px;
+	background-color: #808080;
+	opacity: 0.85;
+	position: relative;
+}
+/* The word- Leader Board*/
+.avatarHeadline2 {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 30px;
+	left: 9%;
+	top: 5%;
+	position: absolute;
+	display: none;
+	z-index: 0;
+	color: #FFFFFF;
+}
+/* Table of Leader Board*/
+.ratingsFrame {
+	display: none;
+	position: relative;
+	width: 901px;
+	height: 1px;
+	top: 100px;
+	margin-left: 100px;
+	border: 1px solid #FFFFFF;
+}
+/*Animated Table of Leader Board*/
+.animateRatings {
+	height: 551px;
+	-webkit-transition: all 0.5s ease-in; /* For Safari 3.1 to 6.0 */
+	-moz-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+}
+
+/* The word- Best Of The Best*/
+.topTenHeadline {
+	display: none;
+	height: 49px;
+	float: left;
+	font-size: 30px;
+	font-family: 'Orbitron', sans-serif;
+	line-height: 60px;
+	margin-left: 38%;
+}
+/*All information on the player*/
+.topTenList {
+	display: none;
+	width: 100%;
+	height: 49px;
+	float: left;
+	color: white;
+}
+
+/*Picture of the level of the cup*/
+.winner {
+	width: 49px;
+	height: 49px;
+	float: left;
+	font-size: 35px;
+	line-height: 50px;
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+}
+/* Name of player*/
+.winnerName {
+	width: 180px;
+	height: 49px;
+	float: left;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
+	line-height: 50px;
+	padding-left: 10px;
+}
+/* Kills */
+.winnerKills{
+	height: 49px;
+	float: left;
+	font-size: 20px;
+	font-family: 'Orbitron', sans-serif;
+	line-height: 50px;
+	padding-left: 240px;
+}
+/* Deaths */
+.winnerDeaths {
+	height: 49px;
+	float: right;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: left;
+	margin-right: 25px;
+}
+
+/******************************End Leader Board  ***********************************/
+
+/****************************************** End main ********************************************/
+
+/***********************************  footer ****************************************/
+
+footer {
+	position: relative;
+	width: 100%;
+	height: 150px;
+	z-index: 2;
+}
+
+footer h6 {
+	text-align: center;
+	padding-top: 30px;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+footer h6 a {
+	color: white;
+}
+footer h6 a:hover {
+	color: #0000FF;
+}
+
+/*********************************** End footer ****************************************/
+
+/***********************************Page Login.html ****************************************/
+
+.mini_wrapper_LOGIN {
+	height: 353px;
+	width: 100%;
+	background-color: #808080;
+	opacity: 0.75;
+	margin-top: -203px;
+}
+/*Login Form*/
+.form {
+	height: 200px;
+	width: 300px;
+	margin-top: 300px;
+	margin-left: 600px;
+}
+.input_Name {
+	height: 40px;
+	width: 250px;
+	border: 1px solid black;
+	position: absolute;
+	padding-left: 5px;
+	font-size: 18px;
+	background-color: white;
+	border-radius: 4px;
+	margin-left: -180px;
+	margin-top: 50PX;
+}
+
+.input_Password_login {
+	height: 40px;
+	width: 250px;
+	margin-top: 70px;
+	border: 1px solid black;
+	position: absolute;
+	padding-left: 5px;
+	font-size: 18px;
+	background-color: white;
+	border-radius: 4px;
+	margin-left: -178px;
+	margin-top: 120px;
+}
+
+.createLogin {
+	height: 70px;
+	width: 270px;
+	top: 560px;
+	border-radius: 0.5em;
+	margin-left: -30px;
+	position: absolute;
+	margin-top: -320px;
+	margin-left: -180px;
+	box-shadow: 1px 1px 1px -2px #89713e;
+}
+
+.createLogin button {
+	border: 0.6px solid black;
+	background-color: #0033FF;
+	line-height: 2px;
+	height: 50px;
+	width: 250px;
+	margin-top: 21px;
+	margin-left: 7px;
+	border-radius: 0.1em;
+	color: #eddfec;
+	font-size: 30px;
+	font-family: 'Orbitron', sans-serif;
+}
+.createLogin button:hover {
+	color: #FFD700;
+	box-shadow: 1px 1px 30px -2px #FFD700;
+}
+/*********************************** End Page Login.html ****************************************/
+
+/************************************ Page Create Account.html ***************************************/
+
+.input_Mail {
+	height: 40px;
+	width: 250px;
+	border: 1px solid black;
+	position: absolute;
+	padding-left: 5px;
+	font-size: 18px;
+	background-color: white;
+	border-radius: 4px;
+	margin-top: 100px;
+	margin-left: -178px;
+}
+
+.input_Password {
+	height: 40px;
+	width: 250px;
+	margin-top: 150px;
+	border: 1px solid black;
+	position: absolute;
+	padding-left: 5px;
+	font-size: 18px;
+	background-color: white;
+	border-radius: 4px;
+	margin-left: -178px;
+}
+
+.input_Verify_Password {
+	height: 40px;
+	width: 250px;
+	margin-top: 200px;
+	border: 1px solid black;
+	position: absolute;
+	padding-left: 5px;
+	font-size: 18px;
+	background-color: white;
+	border-radius: 4px;
+	margin-left: -178px;
+}
+/*********************************** End  Page Create Account.html ****************************************/
+
+/********************************* Page Download.html *****************************************/
+.textHeadline_Download {
+
+	width: 300px;
+	height: 40px;
+	color: #FFFFFF;
+	margin-top: 40px;
+	margin-right: 225px;
+	display: block;
+	float: right;
+}
+
+.mini_wrapper1 {
+	height: 305px;
+	width: 100%;
+	background-color: #808080;
+	opacity: 0.75;
+	margin-top: 43px;
+}
+
+.mini_wrapper_Download {
+	height: 314px;
+	width: 100%; /*background-color:rgba(204,204,204,0.8);*/
+	background-color: #808080;
+	opacity: 0.75;
+	margin-top: 9%;
+}
+
+.textP_Download {
+	width: 450px;
+	height: 200px;
+	margin-right: 36px;
+	margin-top: 60px;
+	color: white;
+	font-size: 21px;
+	font-family: 'Orbitron', sans-serif;
+	float: right;
+	display: block;
+}
+
+.createAvatar {
+
+	height: 149px;
+	width: 387px;
+	top: 150px;
+	border-radius: 2em;
+	margin-left: 120px;
+	position: absolute;
+	margin-top: -100px;
+}
+
+.createAvatar button {
+	background-color: green;
+	border: 0px dashed #312c19;
+	line-height: 2px;
+	height: 80px;
+	width: 320px;
+	margin-top: 9px;
+	margin-left: 80px;
+	border-radius: 0.3em;
+	color: #FFFFFF;
+	font-size: 52px;
+	font-family: 'Orbitron', sans-serif;
+	cursor: pointer;
+}
+.createAvatar button:hover {
+	color: #66FF00;
+	box-shadow: 1px 1px 30px -2px #32CD32;
+}
+
+/********************************* End Page Download.html *****************************************/
+
+/********************************* form *********************************/
+#confirmMessage.confirmMessage {
+	font-size: 18px;
+	margin-left: 89px;
+	float: left;
+	margin-top: 71%;
+	font-family: arial;
+}
+/*****************************************   R E S P O N S I V E   ************************************/
+
+
+/***********************************************  1277    ******************************************/
+@media (max-width: 1277px) {
+
+	/*******heder*****/
+	.menu {
+		width: 553px;
+	}
+
+	.header {
+		height: 76px;
+	}
+	.menu_login {
+		width: 68%;
+		margin-right: 10px;
+		margin-top: -2%;
+	}
+
+	#middle_headline {
+		font-size: 140px;
+	}
+	/************ 1 *************/
+	.bottom_headline {
+		padding-top: 9px;
+	}
+
+	.allImg_index {
+		height: 544px;
+	}
+
+	/********** 2 ****************/
+	.picture {
+		width: 410px;
+	}
+	.textP {
+		margin-right: 0;
+		font-size: 18px;
+		width: 386px;
+	}
+
+	.textHeadline a {
+		margin-left: 46%;
+	}
+
+	.readMore {
+		margin-right: -348px;
+		margin-top: 237px;
+	}
+	/*************** 3 ************/
+	iframe {
+		width: 642px;
+		height: 393px;
+		margin-left: -1%;
+		margin-top: 1%;
+	}
+
+	/*********** 4 **********/
+	.background4 > div > div {
+		margin-top: 4%;
+		margin-left: 5%;
+	}
+	.avatarHeadline1 {
+		font-size: 188%;
+		margin-top: 3%;
+		margin-left: 32%;
+		left: 4%;
+	}
+
+	.avatarModel {
+		margin-right: 5%;
+	}
+
+	/************** 5 ****************/
+	.avatarHeadline2 {
+		font-size: 168%;
+		margin-left: -7%;
+	}
+
+	.winner {
+		font-size: 176%;
+	}
+	.winnerDeaths{
+		padding-left: 0%;
+	}
+
+	.winnerKills {
+		padding-left: 16%;
+	}
+	.winnerName {
+		width: 173px;
+	}
+	.ratingsFrame {
+		width: 700px;
+	}
+
+	/************ Download *************/
+	.textP_Download {
+		width: 460px;
+		height: 200px;
+		float: left;
+		margin-left: 193px;
+		margin-top: 60px;
+		color: white;
+		font-size: 21px;
+		font-family: 'Orbitron', sans-serif;
+		display: block;
+	}
+	.createAvatar button {
+		margin-top: 268px;
+	}
+
+	.mini_wrapper_Download {
+		height: 433px;
+		width: 100%;
+		background-color: #808080;
+		opacity: 0.75;
+		margin-top: 9%;
+	}
+
+}
+/*****************************************  1014    ************************************************/
+@media (max-width: 1014px) {
+	/*******heder*****/
+
+	.menu {
+		width: 553px;
+	}
+	.input_search {
+		margin-left: 1px;
+	}
+	.icon {
+		margin-left: 10px;
+	}
+	.header {
+		height: 126px;
+	}
+	.menu_login {
+		width: 68%;
+		margin-right: 10px;
+		margin-top: -2%;
+	}
+
+	#middle_headline {
+		font-size: 83px;
+		padding-top: 15%;
+	}
+	.bottom_headline {
+		font-size: 28px;
+	}
+	/**************** 1 *************/
+	.mini_wrapper {
+		margin-top: 21%;
+		height: 1524px;
+	}
+	.allImg_index {
+		height: 807px;
+	}
+	/************** 2 ***************/
+	.picture {
+		height: 0px;
+	}
+	.textHeadline a {
+		height: 1098%;
+	}
+	/*************** 3 ************/
+	iframe {
+		width: 418px;
+		height: 230px;
+		margin-left: -1%;
+		margin-top: 9%;
+	}
+
+	/************** 4 **********************/
+	.background4 {
+		height: 1072px;
+	}
+	.avatarHeadline1 {
+		font-size: 153%;
+		margin-top: 5%;
+		margin-left: 11%;
+	}
+	.background4 > div > div {
+		float: left;
+		padding-top: -1%;
+		margin-top: 2%;
+		margin-left: 15%;
+	}
+
+	.avatarModel/*Image of the spaceship*/ {
+
+		width: 402px;
+		height: 407px;
+		margin-left: 16%;
+		margin-top: 8%;
+		float: left;
+		z-index: 1;
+		background: url("../images/14.png");
+	}
+
+	/**************** 5 ******************/
+	.winnerDeaths{
+		padding-left: 0%;
+		font-size: 80%;
+	}
+
+	.winner {
+		font-size: 118%;
+	}
+	.winnerKills{
+		padding-left: 9%;
+		font-size: 80%;
+	}
+	.winnerName {
+		font-size: 80%;
+	}
+
+	.ratingsFrame {
+		width: 615px;
+		margin-left: 10px;
+	}
+	.topTenHeadline {
+		font-size: 80%;
+	}
+
+	/***************** Download ******************/
+	.textP_Download {
+		margin-top: 54px
+	}
+
+	.createAvatar button {
+		margin-left: 73px;
+		margin-top: 251px;
+	}
+
+	.mini_wrapper_Download {
+		height: 395px;
+		margin-top: 20%;
+	}
+
+	#confirmMessage.confirmMessage {
+		margin-left: -166PX;
+	}
+	/**************** LOGIN ********************/
+	.mini_wrapper_LOGIN {
+		margin-top: -190px;
+	}
+
+	.input_Name {
+		margin-left: -439px;
+	}
+
+	.input_Password_login {
+		margin-left: -439px;
+	}
+
+	.createLogin button {
+		margin-left: -252px;
+	}
+	/************************************/
+	.input_Mail {
+		margin-left: -438px;
+	}
+
+	.input_Password {
+		margin-left: -438px;
+	}
+
+	.input_Verify_Password {
+		margin-left: -438px;
+	}
+
+}
